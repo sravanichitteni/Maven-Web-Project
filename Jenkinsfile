@@ -19,7 +19,7 @@ node {
 
        stage('Compiling'){
 	       steps{
-		       withMaven(maven : 'MAVEN'){
+		       withMAVEN(maven : 'MAVEN'){
          bat 'mvn clean compile'
        }
 	       }
