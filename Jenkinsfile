@@ -19,12 +19,12 @@ node {
 
        stage('Compiling'){
 
-       mvn install
+         bat 'mvn install'
        }
 	   
       stage('Sonar') {
                     //add stage sonar
-                     mvn sonar:sonar
+                     bat 'mvn sonar:sonar'
                 }
        stage('mail'){
 
