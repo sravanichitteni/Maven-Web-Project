@@ -19,7 +19,7 @@ node {
 
        stage('Compiling'){
 
-         bat 'mvn clean install'
+         bat 'mvn clean compile'
        }
 	   
       stage('Sonar') {
