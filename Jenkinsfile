@@ -1,5 +1,4 @@
 #!groovy
-<!--
 node {
     currentBuild.result = "SUCCESS"
 
@@ -11,8 +10,7 @@ node {
             'emailTo=devopstrainingblr@gmail.com',
             'emailFrom=devopstrainingblr@gmail.com'
 	    ])
-	    }
--->	
+	    }	
 	pipeline {
 		agent any
 		stages {
