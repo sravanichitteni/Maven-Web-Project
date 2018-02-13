@@ -1,5 +1,5 @@
 #!groovy
-
+<!--
 node {
     currentBuild.result = "SUCCESS"
 
@@ -12,6 +12,7 @@ node {
             'emailFrom=devopstrainingblr@gmail.com'
 	    ])
 	    }
+-->	    
        stage('Checkout'){
 
           checkout scm
@@ -23,7 +24,8 @@ node {
          bat 'mvn clean compile'
        }
 	       }
-       }
+       
+<!--	    
       stage('Sonar') {
                     //add stage sonar
                   
@@ -53,3 +55,4 @@ node {
         throw err
     }
 }
+-->
