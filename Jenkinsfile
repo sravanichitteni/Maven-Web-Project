@@ -19,7 +19,7 @@ node {
 
        stage('Compiling'){
 
-       mvn deploy
+       mvn install
        }
 	   
       stage('Sonar') {
