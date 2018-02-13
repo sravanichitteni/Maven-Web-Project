@@ -12,18 +12,19 @@ node {
             'emailFrom=devopstrainingblr@gmail.com'
 	    ])
 	    }
--->	    
-       stage('Checkout'){
-
-          checkout scm
-       }
-
+-->	
+	pipeline {
+		agent any
+		stages {
        stage('Compiling'){
 	       steps{
 		       withMAVEN(maven : 'MAVEN'){
          bat 'mvn clean compile'
        }
 	       }
+       }
+		}
+	}
        
 <!--	    
       stage('Sonar') {
