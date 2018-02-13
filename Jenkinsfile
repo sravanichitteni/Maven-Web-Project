@@ -24,7 +24,7 @@ node {
 	   
       stage('Sonar') {
                     //add stage sonar
-                     bat 'mvn sonar:sonar'
+                  
                 }
        stage('mail'){
 
